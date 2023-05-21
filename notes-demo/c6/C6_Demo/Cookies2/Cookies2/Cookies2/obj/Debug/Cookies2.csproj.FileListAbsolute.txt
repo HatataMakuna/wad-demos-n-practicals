@@ -1,0 +1,9 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies2\Cookies2\Cookies2\bin\Cookies2.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies2\Cookies2\Cookies2\bin\Cookies2.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies2\Cookies2\Cookies2\obj\Debug\Cookies2.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies2\Cookies2\Cookies2\obj\Debug\Cookies2.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies2\Cookies2\Cookies2\bin\Cookies2.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies2\Cookies2\Cookies2\bin\Cookies2.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies2\Cookies2\Cookies2\obj\Debug\Cookies2.csprojResolveAssemblyReference.cache
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies2\Cookies2\Cookies2\obj\Debug\Cookies2.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies2\Cookies2\Cookies2\obj\Debug\Cookies2.pdb

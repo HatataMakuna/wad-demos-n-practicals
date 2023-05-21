@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\programfiler\microsoft visual studio 8\team tools\static analysis tools\fxcop\Xml\FxCopReport.Xsl"?>
+<FxCopReport Version="8">
+ <Namespaces>
+  <Namespace Name="WebControls">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'WebControls' with another namespace.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Projects\WebControls\bin\Debug\WebControls.dll">
+   <Modules>
+    <Module Name="webcontrols.dll">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttr" Certainty="95" Level="Error">'WebControls' should be marked with CLSCompliantAttribute and its value should be true.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttribute" Certainty="95" Level="CriticalError">Mark 'WebControls' as ComVisible(false) at the assembly level, then mark all types within the assembly that should be exposed to Com clients as ComVisible(true).</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithReliabilityContract" Category="Microsoft.Reliability" CheckId="CA2007" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="CriticalError">'WebControls' should be marked with ReliabilityContract.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="WebControls">
+       <Types>
+        <Type Name="DialogBox" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'WebControls.DialogBox' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy:  System.Web.UI.WebControls.CompositeControl, System.Web.UI.WebControls.WebControl, System.Web.UI.Control</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name=".ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="29">DialogBox..ctor() initializes field dragRow of type System.Web.UI.HtmlControls.HtmlTableRow to null. Remove this initialization as it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="29">DialogBox..ctor() initializes field tbl of type System.Web.UI.HtmlControls.HtmlTable to null. Remove this initialization as it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="29">DialogBox..ctor() initializes field template of type System.Web.UI.ITemplate to null. Remove this initialization as it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CreateChildControls():System.Void" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="53">DialogBox.CreateChildControls():Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="71">DialogBox.CreateChildControls():Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="121">DialogBox.CreateChildControls():Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="122">DialogBox.CreateChildControls():Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="91">DialogBox.CreateChildControls():Void makes a call to System.String.Format(System.String,System.Object,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Moveable" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="set_Moveable(System.Boolean):System.Void" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="222">DialogBox.set_Moveable(Boolean):Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="OnInit(System.EventArgs):System.Void" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="Breaking">
+             <Issue Name="Security" Certainty="40" Level="CriticalError" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="237">Consider making DialogBox.OnInit(EventArgs):Void not externally visible or ensure that it is benign code.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="OnPreRender(System.EventArgs):System.Void" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="Breaking">
+             <Issue Name="Security" Certainty="40" Level="CriticalError" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="244">Consider making DialogBox.OnPreRender(EventArgs):Void not externally visible or ensure that it is benign code.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="249">DialogBox.OnPreRender(EventArgs):Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="250">DialogBox.OnPreRender(EventArgs):Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Projects\WebControls" File="DialogBox.cs" Line="254">DialogBox.OnPreRender(EventArgs):Void makes a call to System.String.Format(System.String,System.Object) that does not explicitly provide an IFormatProvider. This should be replaced with a call to System.String.Format(System.IFormatProvider,System.String,System.Object[]).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DialogDesigner" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'WebControls.DialogDesigner' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy:  System.Web.UI.Design.ControlDesigner, System.Web.UI.Design.HtmlControlDesigner, System.ComponentModel.Design.ComponentDesigner</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name=".ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Projects\WebControls" File="DialogDesigner.cs" Line="18">DialogDesigner..ctor() initializes field col of type System.Web.UI.Design.TemplateGroupCollection to null. Remove this initialization as it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DialogTemplate" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'WebControls.DialogTemplate' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy:  System.Web.UI.Control</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ResourcesClass" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2005-09-20 20:18:30Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'WebControls.ResourcesClass' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Design/AvoidNamespacesWithFewTypes.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">'{0}' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Performance/AvoidUninstantiatedInternalClasses.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405">
+   <Name>Com visible type base types should be ComVisible</Name>
+   <Description>COM visible types should have an object hierarchy that is uniformly COM visible.</Description>
+   <Resolution Name="Default">'{0}' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: {1}</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Interoperability/ComVisibleTypeBaseTypesShouldBeComVisible.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="InteroperabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+   <Name>Do not initialize unnecessarily</Name>
+   <Description>Do not make initializations that have already been done by the runtime.</Description>
+   <Resolution Name="Default">{0} initializes field {1} of type {2} to {3}. Remove this initialization as it will be done automatically by the runtime.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Performance/DoNotInitializeUnnecessarily.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliant</Name>
+   <Description>Assemblies should explicitly state their Cls compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="NoAttr">'{0}' should be marked with CLSCompliantAttribute and its value should be true.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Design/MarkAssembliesWithClsCompliant.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+   <Name>Mark assemblies with ComVisible</Name>
+   <Description>The ComVisible attribute indicates whether COM clients can use the library. Good design dictates that developers explicitly indicate COM visibility. The default value for this attribute is 'true'. However, the best design is to mark the assembly ComVisible false, and then marking types, interfaces, and individual members as ComVisible true, as appropriate. For more information, see the Design Guidelines section titled Exposing Functionality to COM.</Description>
+   <Resolution Name="NoAttribute">Mark '{0}' as ComVisible(false) at the assembly level, then mark all types within the assembly that should be exposed to Com clients as ComVisible(true).</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Design/MarkAssembliesWithComVisible.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="95">CriticalError, Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithReliabilityContract" Category="Microsoft.Reliability" CheckId="CA2007">
+   <Name>Mark assemblies with ReliabilityContract</Name>
+   <Description>A decision needs to be made on the reliability of each assembly. This decision must be reflected in the assembly by marking the assembly with ReliabilityContract.</Description>
+   <Resolution Name="Default">'{0}' should be marked with ReliabilityContract.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Reliability/MarkAssembliesWithReliabilityContract.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="ReliabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109">
+   <Name>Review visible event handlers</Name>
+   <Description>It appears that an event handler is externally visible or that an EventArgs parameter is being exposed in a visible method decorated with a security demand. There can be problems exposing sensitive functionality in an event handler function; the security demand might not do what you expect.</Description>
+   <Resolution Name="Security">Consider making {0} not externally visible or ensure that it is benign code.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Security/ReviewVisibleEventHandlers.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="40">CriticalError</MessageLevel>
+   <File Name="SecurityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the common language runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture.</Description>
+   <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide an IFormatProvider. This should be replaced with a call to {2}.</Resolution>
+   <Owner />
+   <Url>http://www.gotdotnet.com/team/fxcop/docs/rules.aspx?version=unstable&amp;url=/Globalization/SpecifyIFormatProvider.html</Url>
+   <Email>fxcopbug@microsoft.com</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+ </Rules>
+</FxCopReport>

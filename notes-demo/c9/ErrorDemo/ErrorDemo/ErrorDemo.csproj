@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FDCBC01-D406-4635-B9C3-6065E9CDD204}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ErrorDemo</RootNamespace>
+    <AssemblyName>ErrorDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1_ParseError.aspx" />
+    <Content Include="2_CompilationError.aspx" />
+    <Content Include="3_ConfigurationError.aspx" />
+    <Content Include="4_RuntimeError.aspx" />
+    <Content Include="5_TryCatch.aspx" />
+    <Content Include="6_PageError.aspx" />
+    <Content Include="ApplicationError.aspx" />
+    <Content Include="CustomError.aspx" />
+    <Content Include="Debug.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="errors\baby-crying.jpg" />
+    <Content Include="errors\FileNotFound.aspx" />
+    <Content Include="errors\FileNotFound.htm" />
+    <Content Include="errors\GenericErrorPage.htm" />
+    <Content Include="Tracing.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_ParseError.aspx.cs">
+      <DependentUpon>1_ParseError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1_ParseError.aspx.designer.cs">
+      <DependentUpon>1_ParseError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2_CompilationError.aspx.cs">
+      <DependentUpon>2_CompilationError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2_CompilationError.aspx.designer.cs">
+      <DependentUpon>2_CompilationError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3_ConfigurationError.aspx.cs">
+      <DependentUpon>3_ConfigurationError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3_ConfigurationError.aspx.designer.cs">
+      <DependentUpon>3_ConfigurationError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4_RuntimeError.aspx.cs">
+      <DependentUpon>4_RuntimeError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4_RuntimeError.aspx.designer.cs">
+      <DependentUpon>4_RuntimeError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5_TryCatch.aspx.cs">
+      <DependentUpon>5_TryCatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5_TryCatch.aspx.designer.cs">
+      <DependentUpon>5_TryCatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6_PageError.aspx.cs">
+      <DependentUpon>6_PageError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6_PageError.aspx.designer.cs">
+      <DependentUpon>6_PageError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationError.aspx.cs">
+      <DependentUpon>ApplicationError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationError.aspx.designer.cs">
+      <DependentUpon>ApplicationError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomError.aspx.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomError.aspx.designer.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Debug.aspx.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debug.aspx.designer.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors\FileNotFound.aspx.cs">
+      <DependentUpon>FileNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracing.aspx.cs">
+      <DependentUpon>Tracing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tracing.aspx.designer.cs">
+      <DependentUpon>Tracing.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2941/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

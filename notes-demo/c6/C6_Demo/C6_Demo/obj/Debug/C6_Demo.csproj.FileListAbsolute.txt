@@ -1,0 +1,5 @@
+F:\TARUC\2113_201605\Chapter6\C6_Demo\C6_Demo\bin\C6_Demo.dll
+F:\TARUC\2113_201605\Chapter6\C6_Demo\C6_Demo\bin\C6_Demo.pdb
+F:\TARUC\2113_201605\Chapter6\C6_Demo\C6_Demo\obj\Debug\C6_Demo.csprojResolveAssemblyReference.cache
+F:\TARUC\2113_201605\Chapter6\C6_Demo\C6_Demo\obj\Debug\C6_Demo.dll
+F:\TARUC\2113_201605\Chapter6\C6_Demo\C6_Demo\obj\Debug\C6_Demo.pdb

@@ -1,0 +1,30 @@
+C:\Users\Administrator\Desktop\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+C:\Users\Administrator\Desktop\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+C:\Users\Administrator\Desktop\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+C:\Users\Administrator\Desktop\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb
+F:\IP2009\Others\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+F:\IP2009\Others\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+F:\IP2009\Others\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\ResolveAssemblyReference.cache
+F:\IP2009\Others\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+F:\IP2009\Others\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\ResolveAssemblyReference.cache
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\ResolveAssemblyReference.cache
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 5\MembershipNRoleManagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll.config
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.dll
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\bin\MembershipNRoleManagement.pdb
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.csprojResolveAssemblyReference.cache
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.dll
+C:\Users\TARUC\Desktop\membershipnrolemanagement\MembershipNRoleManagement\obj\Debug\MembershipNRoleManagement.pdb

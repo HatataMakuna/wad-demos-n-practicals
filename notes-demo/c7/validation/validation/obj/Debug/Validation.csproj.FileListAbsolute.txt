@@ -1,0 +1,10 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.csprojResolveAssemblyReference.cache
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\bin\Validation.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\bin\Validation.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.pdb
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\bin\Validation.dll
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\bin\Validation.pdb
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.csprojResolveAssemblyReference.cache
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.dll
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 7\ValidationDemo\Validation\Validation\obj\Debug\Validation.pdb

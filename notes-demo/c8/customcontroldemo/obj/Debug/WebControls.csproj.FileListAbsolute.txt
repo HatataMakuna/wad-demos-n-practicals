@@ -1,0 +1,7 @@
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\bin\Debug\Resources\Dialog.js
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\bin\Debug\Resources\header_background.gif
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\bin\Debug\WebControls.dll
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\bin\Debug\WebControls.pdb
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\obj\Debug\WebControls.csprojResolveAssemblyReference.cache
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\obj\Debug\WebControls.dll
+F:\Dropbox\AACS4134-201213\2015\Lecture\Chapter 8\CustomControlDemo\obj\Debug\WebControls.pdb
