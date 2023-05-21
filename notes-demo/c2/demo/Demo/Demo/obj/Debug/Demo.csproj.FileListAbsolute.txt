@@ -1,0 +1,5 @@
+E:\Lecture\BAIT2113 Web Application Development - May2015\Lecture\Chapter 2\Demo\Demo\Demo\bin\Demo.dll
+E:\Lecture\BAIT2113 Web Application Development - May2015\Lecture\Chapter 2\Demo\Demo\Demo\bin\Demo.pdb
+E:\Lecture\BAIT2113 Web Application Development - May2015\Lecture\Chapter 2\Demo\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+E:\Lecture\BAIT2113 Web Application Development - May2015\Lecture\Chapter 2\Demo\Demo\Demo\obj\Debug\Demo.dll
+E:\Lecture\BAIT2113 Web Application Development - May2015\Lecture\Chapter 2\Demo\Demo\Demo\obj\Debug\Demo.pdb
