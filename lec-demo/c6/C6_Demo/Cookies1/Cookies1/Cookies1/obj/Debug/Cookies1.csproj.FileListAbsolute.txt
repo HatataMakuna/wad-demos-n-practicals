@@ -1,0 +1,10 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.csprojResolveAssemblyReference.cache
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies1\Cookies1\Cookies1\bin\Cookies1.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies1\Cookies1\Cookies1\bin\Cookies1.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies1\Cookies1\Cookies1\bin\Cookies1.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies1\Cookies1\Cookies1\bin\Cookies1.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Cookies1\Cookies1\Cookies1\obj\Debug\Cookies1.csprojResolveAssemblyReference.cache

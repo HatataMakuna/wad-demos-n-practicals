@@ -1,0 +1,9 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Application\Application\bin\Application.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Application\Application\bin\Application.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Application\Application\obj\Debug\Application.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Application\Application\obj\Debug\Application.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Application\Application\Application\bin\Application.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Application\Application\Application\bin\Application.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Application\Application\Application\obj\Debug\Application.csprojResolveAssemblyReference.cache
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Application\Application\Application\obj\Debug\Application.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Application\Application\Application\obj\Debug\Application.pdb
