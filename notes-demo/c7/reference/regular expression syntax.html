@@ -1,0 +1,450 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Regular Expressions Reference - Basic Syntax</title>
+
+<link rel="alternate" type="application/rss+xml" title="Regex Guru" 
+href="http://www.regexguru.com/feed/">
+<meta name="Author" content="Jan Goyvaerts">
+<meta name="Description" content="Reference of the various syntactic 
+elements that can appear in regular expressions">
+<meta name="Keywords" content="">
+<link rel="StyleSheet" 
+href="regular%20expression%20syntax_files/regex.css" type="text/css">
+</head><body bgcolor="white" text="black">
+<div class="top"><div class="logo"><img 
+src="regular%20expression%20syntax_files/logo.gif" width="530" 
+height="100"></div></div>
+<div class="btntop"><a class="btntop" 
+href="http://www.regular-expressions.info/tutorial.html" target="_top">Tutorial</a><a
+ class="btntop" href="http://www.regular-expressions.info/tools.html" 
+target="_top">Tools&nbsp;&amp;&nbsp;Languages</a><a class="btntop" 
+href="http://www.regular-expressions.info/examples.html" target="_top">Examples</a><a
+ class="btntop" href="http://www.regular-expressions.info/books.html" 
+target="_top">Books&nbsp;&amp;&nbsp;Reference</a></div>
+<div class="bodytext">
+<table class="topad"> <tbody><tr><td valign="top"><a 
+href="http://www.regexbuddy.com/create.html" target="_top"><img 
+src="regular%20expression%20syntax_files/rxb48.gif" alt="RegexBuddy" 
+width="48" border="0" height="48"></a></td> <td class="topad"><a 
+href="http://www.regexbuddy.com/create.html" target="_top">Easily create
+ and understand regular expressions today</a>. Compose and analyze regex
+ patterns with RegexBuddy's easy-to-grasp regex blocks and intuitive 
+regex tree, instead of or in combination with the traditional regex 
+syntax. Developed by the author of this website, RegexBuddy makes 
+learning and using regular expressions easier than ever. <a 
+href="http://www.regexbuddy.com/">Get your own copy of RegexBuddy now</a>,
+ and get a FREE printable PDF version of the regex reference on this 
+website.</td> </tr></tbody></table>  
+<h1>Regular Expression Basic Syntax Reference</h1>
+
+<table class="body" border="1" cellpadding="4" cellspacing="0">
+
+
+<tbody><tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/characters.html" target="_top">Characters</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top">Any character except <tt>[\^$.|?*+()</tt></td>
+<td valign="top">All characters except the listed special characters 
+match a single instance of themselves.  <tt>{</tt> and <tt>}</tt> are 
+literal characters, unless they're part of a valid regular expression 
+token (e.g. the <tt>{n}</tt> quantifier).</td>
+<td valign="top"><tt class="regex">a</tt> matches <tt class="match">a</tt></td></tr>
+
+<tr><td valign="top"><tt>\</tt> (backslash) followed by any of <tt>[\^$.|?*+(){}</tt></td>
+<td valign="top">A backslash escapes special characters to suppress 
+their special meaning.</td>
+<td valign="top"><tt class="regex">\+</tt> matches <tt class="match">+</tt></td></tr>
+
+<tr><td valign="top"><tt>\Q...\E</tt></td>
+<td valign="top">Matches the characters between <tt>\Q</tt> and <tt>\E</tt>
+ literally, suppressing the meaning of special characters.</td>
+<td valign="top"><tt class="regex">\Q+-*/\E</tt> matches <tt 
+class="match">+-*/</tt></td></tr>
+
+<tr><td valign="top"><tt>\xFF</tt> where FF are 2 hexadecimal digits </td>
+<td valign="top">Matches the character with the specified ASCII/ANSI 
+value, which depends on the code page used.  Can be used in character 
+classes.</td>
+<td valign="top"><tt class="regex">\xA9</tt> matches <tt class="match">©</tt>
+ when using the Latin-1 code page.</td></tr>
+
+<tr><td valign="top"><tt>\n</tt>, <tt>\r</tt> and <tt>\t</tt></td>
+<td valign="top">Match an LF character, CR character and a tab character
+ respectively.  Can be used in character classes.</td>
+<td valign="top"><tt class="regex">\r\n</tt> matches a DOS/Windows CRLF 
+line break.</td></tr>
+
+<tr><td valign="top"><tt>\a</tt>, <tt>\e</tt>, <tt>\f</tt> and <tt>\v</tt></td>
+<td valign="top">Match a bell character (<tt>\x07</tt>), escape 
+character (<tt>\x1B</tt>), form feed (<tt>\x0C</tt>) and vertical tab (<tt>\x0B</tt>)
+ respectively.  Can be used in character classes.</td>
+<td>&nbsp;</td></tr>
+
+<tr><td valign="top"><tt>\cA</tt> through <tt>\cZ</tt></td>
+<td valign="top">Match an ASCII character Control+A through Control+Z, 
+equivalent to <tt class="regex">\x01</tt> through <tt class="regex">\x1A</tt>.
+  Can be used in character classes.</td>
+<td valign="top"><tt class="regex">\cM\cJ</tt> matches a DOS/Windows 
+CRLF line break.</td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/charclass.html" target="_top">Character
+ Classes or Character Sets</a> [abc]</th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>[</tt> (opening square bracket)</td>
+<td valign="top">Starts a character class.  A character class matches a 
+single character out of all the possibilities offered by the character 
+class.  Inside a character class, different rules apply.  The rules in 
+this section are only valid inside character classes.  The rules outside
+ this section are not valid in character classes, except for a few 
+character escapes that are indicated with "can be used inside character 
+classes".</td>
+<td>&nbsp;</td></tr>
+
+<tr><td valign="top">Any character except <nobr><tt>^-]\</tt></nobr> add
+ that character to the possible matches for the character class.</td>
+<td valign="top">All characters except the listed special characters.</td>
+<td valign="top"><tt class="regex">[abc]</tt> matches <tt class="match">a</tt>,
+ <tt class="match">b</tt> or <tt class="match">c</tt></td></tr>
+
+<tr><td valign="top"><tt>\</tt> (backslash) followed by any of <nobr><tt>^-]\</tt></nobr></td>
+<td valign="top">A backslash escapes special characters to suppress 
+their special meaning.</td>
+<td valign="top"><tt class="regex">[\^\]]</tt> matches <tt class="match">^</tt>
+ or <tt class="match">]</tt></td></tr>
+
+<tr><td valign="top"><tt>-</tt> (hyphen) except immediately after the 
+opening <tt>[</tt></td>
+<td valign="top">Specifies a range of characters.  (Specifies a hyphen 
+if placed immediately after the opening <tt>[</tt>)</td>
+<td valign="top"><tt class="regex">[a-zA-Z0-9]</tt> matches any letter 
+or digit</td></tr>
+
+<tr><td valign="top"><tt>^</tt> (caret) immediately after the opening <tt>[</tt></td>
+<td valign="top">Negates the character class, causing it to match a 
+single character <i>not</i> listed in the character class.  (Specifies a
+ caret if placed anywhere except after the opening <tt>[</tt>)</td>
+<td valign="top"><tt class="regex">[^a-d]</tt> matches <tt class="match">x</tt>
+ (any character except a, b, c or d)</td></tr>
+
+<tr><td valign="top"><tt>\d</tt>, <tt>\w</tt> and <tt>\s</tt></td>
+<td valign="top">Shorthand character classes matching digits, word 
+characters (letters, digits, and underscores), and whitespace (spaces, 
+tabs, and line breaks).  Can be used inside and outside character 
+classes.</td>
+<td valign="top"><tt class="regex">[\d\s]</tt> matches a character that 
+is a digit or whitespace</td></tr>
+
+<tr><td valign="top"><tt>\D</tt>, <tt>\W</tt> and <tt>\S</tt></td>
+<td valign="top">Negated versions of the above.  Should be used only 
+outside character classes.  (Can be used inside, but that is confusing.)</td>
+<td valign="top"><tt class="regex">\D</tt> matches a character that is 
+not a digit</td></tr>
+
+<tr><td valign="top"><tt>[\b]</tt></td>
+<td valign="top">Inside a character class, <tt>\b</tt> is a backspace 
+character.</td>
+<td valign="top"><tt class="regex">[\b\t]</tt> matches a backspace or 
+tab character</td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/dot.html" target="_top">Dot</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>.</tt> (dot)</td>
+<td valign="top">Matches any single character except line break 
+characters \r and \n.  Most regex flavors have an option to make the dot
+ match line break characters too.</td>
+<td valign="top"><tt class="regex">.</tt> matches <tt class="match">x</tt>
+ or (almost) any other character</td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/anchors.html" target="_top">Anchors</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>^</tt> (caret)</td>
+<td valign="top">Matches at the start of the string the regex pattern is
+ applied to.  Matches a position rather than a character.  Most regex 
+flavors have an option to make the caret match after line breaks (i.e. 
+at the start of a line in a file) as well.</td>
+<td valign="top"><tt class="regex">^.</tt> matches <tt class="match">a</tt>
+ in <tt class="string">abc\ndef</tt>.  Also matches <tt class="match">d</tt>
+ in "multi-line" mode.</td></tr>
+
+<tr><td valign="top"><tt>$</tt> (dollar)</td>
+<td valign="top">Matches at the end of the string the regex pattern is 
+applied to.  Matches a position rather than a character.  Most regex 
+flavors have an option to make the dollar match before line breaks (i.e.
+ at the end of a line in a file) as well.  Also matches before the very 
+last line break if the string ends with a line break.</td>
+<td valign="top"><tt class="regex">.$</tt> matches <tt class="match">f</tt>
+ in <tt class="string">abc\ndef</tt>.  Also matches <tt class="match">c</tt>
+ in "multi-line" mode.</td></tr>
+
+<tr><td valign="top"><tt>\A</tt></td>
+<td valign="top">Matches at the start of the string the regex pattern is
+ applied to.  Matches a position rather than a character.  Never matches
+ after line breaks.</td>
+<td valign="top"><tt class="regex">\A.</tt> matches <tt class="match">a</tt>
+ in <tt class="string">abc</tt></td></tr>
+
+<tr><td valign="top"><tt>\Z</tt></td>
+<td valign="top">Matches at the end of the string the regex pattern is 
+applied to.  Matches a position rather than a character.  Never matches 
+before line breaks, except for the very last line break if the string 
+ends with a line break.</td>
+<td valign="top"><tt class="regex">.\Z</tt> matches <tt class="match">f</tt>
+ in <tt class="string">abc\ndef</tt></td></tr>
+
+<tr><td valign="top"><tt>\z</tt></td>
+<td valign="top">Matches at the end of the string the regex pattern is 
+applied to.  Matches a position rather than a character.  Never matches 
+before line breaks.</td>
+<td valign="top"><tt class="regex">.\z</tt> matches <tt class="match">f</tt>
+ in <tt class="string">abc\ndef</tt></td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/wordboundaries.html" 
+target="_top">Word Boundaries</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>\b</tt></td>
+<td valign="top">Matches at the position between a word character 
+(anything matched by <tt class="regex">\w</tt>) and a non-word character
+ (anything matched by <tt class="regex">[^\w]</tt> or <tt class="regex">\W</tt>)
+ as well as at the start and/or end of the string if the first and/or 
+last characters in the string are word characters.</td>
+<td valign="top"><tt class="regex">.\b</tt> matches <tt class="match">c</tt>
+ in <tt class="string">abc</tt></td></tr>
+
+<tr><td valign="top"><tt>\B</tt></td>
+<td valign="top">Matches at the position between two word characters 
+(i.e the position between <tt class="regex">\w\w</tt>) as well as at the
+ position between two non-word characters (i.e. <tt class="regex">\W\W</tt>).</td>
+<td valign="top"><tt class="regex">\B.\B</tt> matches <tt class="match">b</tt>
+ in <tt class="string">abc</tt></td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/alternation.html" 
+target="_top">Alternation</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>|</tt> (pipe)</td>
+<td valign="top">Causes the regex engine to match either the part on the
+ left side, or the part on the right side.  Can be strung together into a
+ series of options.</td>
+<td valign="top"><tt class="regex">abc|def|xyz</tt> matches <tt 
+class="match">abc</tt>, <tt class="match">def</tt> or <tt class="match">xyz</tt></td></tr>
+
+<tr><td valign="top"><tt>|</tt> (pipe)</td>
+<td valign="top">The pipe has the lowest precedence of all operators.  
+Use grouping to alternate only part of the regular expression.</td>
+<td valign="top"><tt class="regex">abc(def|xyz)</tt> matches <tt 
+class="match">abcdef</tt> or <tt class="match">abcxyz</tt></td></tr>
+
+<tr><th colspan="3"><a 
+href="http://www.regular-expressions.info/repeat.html" target="_top">Quantifiers</a></th></tr>
+
+<tr><th>Character</th><th>Description</th><th>Example</th></tr>
+
+<tr><td valign="top"><tt>?</tt> (question mark)</td>
+<td valign="top">Makes the preceding item optional.  Greedy, so the 
+optional item is included in the match if possible.</td>
+<td valign="top"><tt class="regex">abc?</tt> matches <tt class="match">ab</tt>
+ or <tt class="match">abc</tt></td></tr>
+
+<tr><td valign="top"><tt>??</tt></td>
+<td valign="top">Makes the preceding item optional.  Lazy, so the 
+optional item is excluded in the match if possible.  This construct is 
+often excluded from documentation because of its limited use.</td>
+<td valign="top"><tt class="regex">abc??</tt> matches <tt class="match">ab</tt>
+ or <tt class="match">abc</tt></td></tr>
+
+<tr><td valign="top"><tt>*</tt> (star)</td>
+<td valign="top">Repeats the previous item zero or more times.  Greedy, 
+so as many items as possible will be matched before trying permutations 
+with less matches of the preceding item, up to the point where the 
+preceding item is not matched at all.</td>
+<td valign="top"><tt class="regex">".*"</tt> matches <tt class="match">"def"
+ "ghi"</tt> in <tt class="string">abc "def" "ghi" jkl</tt></td></tr>
+
+<tr><td valign="top"><tt>*?</tt> (lazy star)</td>
+<td valign="top">Repeats the previous item zero or more times.  Lazy, so
+ the engine first attempts to skip the previous item, before trying 
+permutations with ever increasing matches of the preceding item.</td>
+<td valign="top"><tt class="regex">".*?"</tt> matches <tt class="match">"def"</tt>
+ in <tt class="string">abc "def" "ghi" jkl</tt></td></tr>
+
+<tr><td valign="top"><tt>+</tt> (plus)</td>
+<td valign="top">Repeats the previous item once or more.  Greedy, so as 
+many items as possible will be matched before trying permutations with 
+less matches of the preceding item, up to the point where the preceding 
+item is matched only once.</td>
+<td valign="top"><tt class="regex">".+"</tt> matches <tt class="match">"def"
+ "ghi"</tt> in <tt class="string">abc "def" "ghi" jkl</tt></td></tr>
+
+<tr><td valign="top"><tt>+?</tt> (lazy plus)</td>
+<td valign="top">Repeats the previous item once or more.  Lazy, so the 
+engine first matches the previous item only once, before trying 
+permutations with ever increasing matches of the preceding item.</td>
+<td valign="top"><tt class="regex">".+?"</tt> matches <tt class="match">"def"</tt>
+ in <tt class="string">abc "def" "ghi" jkl</tt></td></tr>
+
+<tr><td valign="top"><tt>{n}</tt> where n is an integer &gt;= 1</td>
+<td valign="top">Repeats the previous item exactly n times.</td>
+<td valign="top"><tt class="regex">a{3}</tt> matches <tt class="match">aaa</tt></td></tr>
+
+<tr><td valign="top"><tt>{n,m}</tt> where n &gt;= 0 and m &gt;= n</td>
+<td valign="top">Repeats the previous item between n and m times.  
+Greedy, so repeating m times is tried before reducing the repetition to n
+ times.</td>
+<td valign="top"><tt class="regex">a{2,4}</tt> matches <tt class="match">aaaa</tt>,
+ <tt class="match">aaa</tt> or <tt class="match">aa</tt></td></tr>
+
+<tr><td valign="top"><tt>{n,m}?</tt> where n &gt;= 0 and m &gt;= n</td>
+<td valign="top">Repeats the previous item between n and m times.  Lazy,
+ so repeating n times is tried before increasing the repetition to m 
+times.</td>
+<td valign="top"><tt class="regex">a{2,4}?</tt> matches <tt 
+class="match">aa</tt>, <tt class="match">aaa</tt> or <tt class="match">aaaa</tt></td></tr>
+
+<tr><td valign="top"><tt>{n,}</tt> where n &gt;= 0</td>
+<td valign="top">Repeats the previous item at least n times.  Greedy, so
+ as many items as possible will be matched before trying permutations 
+with less matches of the preceding item, up to the point where the 
+preceding item is matched only n times.</td>
+<td valign="top"><tt class="regex">a{2,}</tt> matches <tt class="match">aaaaa</tt>
+ in <tt class="string">aaaaa</tt></td></tr>
+
+<tr><td valign="top"><tt>{n,}?</tt> where n &gt;= 0</td>
+<td valign="top">Repeats the previous item n or more times.  Lazy, so 
+the engine first matches the previous item n times, before trying 
+permutations with ever increasing matches of the preceding item.</td>
+<td valign="top"><tt class="regex">a{2,}?</tt> matches <tt class="match">aa</tt>
+ in <tt class="string">aaaaa</tt></td></tr>
+
+</tbody></table>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7485249680256358";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FF6600";
+google_color_bg = "FFF4E8";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "803300";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript" src="regular%20expression%20syntax_files/show_ads.js">
+</script><script src="regular%20expression%20syntax_files/expansion_embed.js"></script><script src="regular%20expression%20syntax_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins
+ style="display: inline-table; border: medium none; height: 90px; 
+margin: 0pt; padding: 0pt; position: relative; visibility: visible; 
+width: 728px;"><ins style="display: block; border: medium none; height: 
+90px; margin: 0pt; padding: 0pt; position: relative; visibility: 
+visible; width: 728px;"><iframe allowtransparency="true" hspace="0" 
+id="google_ads_frame1" marginheight="0" marginwidth="0" 
+name="google_ads_frame" 
+src="regular%20expression%20syntax_files/ads.htm" style="left: 0pt; 
+position: absolute; top: 0pt;" vspace="0" width="728" frameborder="0" 
+height="90" scrolling="no"></iframe></ins></ins><h2>Make a Donation</h2>
+<p>Did this website just save you a trip to the bookstore?  Please <a 
+href="http://www.regular-expressions.info/donate.html">make a donation</a>
+ to support this site, and you'll get a lifetime of advertisement-free 
+access to this site!</p>
+<div class="copyright">
+<p class="copyright">Page URL: <a 
+href="http://www.regular-expressions.info/reference.html" target="_top">http://www.Regular-Expressions.info/reference.html</a><br>
+Page last updated: 18 October 2009<br>
+Site last updated: 11 June 2010<br>
+Copyright © 2003-2010 Jan Goyvaerts. All rights reserved.</p>
+</div> 
+
+<script type="text/javascript"><!--
+var google_conversion_id = 1072547447; var google_conversion_language = "en"; var google_conversion_format = "3"; var google_conversion_color = "666666"; var google_conversion_label = "sqPQCInO3QEQ94y3_wM"; var google_conversion_value = 0;
+//-->
+</script>
+<script type="text/javascript" src="regular%20expression%20syntax_files/conversion.js"></script><img
+ src="regular%20expression%20syntax_files/a.htm" width="1" border="0" 
+height="1">
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1072547447/?label=sqPQCInO3QEQ94y3_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div> 
+<div class="side"><table class="side" cellpadding="4" cellspacing="0"><tbody><tr><td
+ class="sideheader">Books</td></tr><tr><td><a 
+href="http://www.regular-expressions.info/cookbook.html" target="_top">Regular&nbsp;Expr.&nbsp;Cookbook</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/book10mins.html" 
+target="_top">Teach&nbsp;Yourself&nbsp;Reg.&nbsp;Expr.</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/hipowls.html" target="_top">Mastering&nbsp;Regular&nbsp;Expr.</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/javabook.html" target="_top">Java&nbsp;Regular&nbsp;Expressions</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/bookoracleref.html" 
+target="_top">Oracle&nbsp;Regular&nbsp;Expr.</a></td></tr><tr><td><a 
+href="http://www.regular-expressions.info/bookpocket.html" target="_top">Regular&nbsp;Expr.&nbsp;Pocket&nbsp;Ref.</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/bookrecipes.html" 
+target="_top">Regular&nbsp;Expr.&nbsp;Recipes</a></td></tr><tr><td><a 
+href="http://www.regular-expressions.info/bookrecipeswin.html" 
+target="_top">Regex&nbsp;Recipes&nbsp;for&nbsp;Windows</a></td></tr>
+</tbody></table><table class="side" cellpadding="4" cellspacing="0"><tbody><tr><td
+ class="sideheader">Regex Reference</td></tr><tr><td><a 
+href="http://www.regular-expressions.info/reference.html" target="_top">Basic&nbsp;Regex&nbsp;Syntax</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/refadv.html" target="_top">Advanced&nbsp;Regex&nbsp;Syntax</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/refunicode.html" 
+target="_top">Unicode-Specific&nbsp;Syntax</a></td></tr><tr><td><a 
+href="http://www.regular-expressions.info/refext.html" target="_top">Flavor-Specific&nbsp;Syntax</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/refflavors.html" 
+target="_top">Flavor&nbsp;Comparison</a></td></tr><tr><td><a 
+href="http://www.regular-expressions.info/refreplace.html" target="_top">Replacement&nbsp;Syntax</a></td></tr>
+</tbody></table><table class="side" cellpadding="4" cellspacing="0"><tbody><tr><td
+ class="sideheader">More Information</td></tr><tr><td><a 
+href="http://www.regular-expressions.info/index.html" target="_top">Introduction</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/quickstart.html" 
+target="_top">Quick&nbsp;Start</a></td></tr><tr><td><a 
+href="http://www.regular-expressions.info/tutorial.html" target="_top">Tutorial</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/tools.html" target="_top">Tools&nbsp;and&nbsp;Languages</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/examples.html" target="_top">Examples</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/books.html" target="_top">Books</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/reference.html" target="_top">Reference</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/print.html" target="_top">Print&nbsp;PDF</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/about.html" target="_top">About&nbsp;This&nbsp;Site</a></td></tr><tr><td><a
+ href="http://www.regular-expressions.info/updates.html" target="_top">RSS&nbsp;Feed&nbsp;&amp;&nbsp;Blog</a></td></tr></tbody></table><iframe
+ class="amazonsingle" src="regular%20expression%20syntax_files/cm.htm" 
+style="width: 120px; height: 240px;" marginwidth="0" marginheight="0" 
+frameborder="0" scrolling="no"></iframe><p>&nbsp;</p> <table 
+class="sidead" cellpadding="4" cellspacing="0"> <tbody><tr><td 
+class="sideheader"><b>New!</b> PowerGREP 4</td></tr> <tr><td class="ad"><a
+ href="http://www.powergrep.com/" target="_top"><img 
+src="regular%20expression%20syntax_files/pgr.gif" alt="PowerGREP" 
+class="iconleft" width="32" align="LEFT" border="0" height="32"></a> <a 
+href="http://www.powergrep.com/" target="_top">PowerGREP</a> is probably
+ the most powerful regex-based text processing tool available today. A 
+knowledge worker's Swiss army knife for searching through, extracting 
+information from, and updating piles of files.</td></tr> <tr><td 
+class="ad">Use regular expressions to search through large numbers of 
+text and binary files. Quickly find the files you are looking for, or 
+extract the information you need. Look through just a handful of files 
+or folders, or scan entire drives and network shares.</td></tr> <tr><td 
+class="ad">Search and replace using text, binary data or one or more 
+regular expressions to automate repetitive editing tasks. Preview 
+replacements before modifying files, and stay safe with flexible backup 
+and undo options.</td></tr> <tr><td class="ad">Use regular expressions 
+to rename files, copy files, or merge and split the contents of files. 
+Work with plain text files, Unicode files, binary files, compressed 
+files, and files in proprietary formats such as MS Office, OpenOffice, 
+and PDF. Runs on Windows 2000, XP, Vista, and 7.</td></tr> <tr><td><a 
+href="http://www.powergrep.com/" target="_top">More information</a></td></tr>
+ <tr><td><a href="http://www.powergrep.com/download.html" target="_top">Download
+ PowerGREP now</a></td></tr> </tbody></table></div></body></html>

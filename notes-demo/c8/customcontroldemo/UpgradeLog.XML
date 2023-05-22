@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WebControls">
+</Property><Property Name="Solution File" Value="D:\TARC\Teaching Materials\AACS4134 Internet Programming\AACS4134_200910\Lecture Slides\Chapter 8\CustomControlDemo\WebControls.sln">
+</Property><Property Name="Date" Value="Monday, 27 July, 2009">
+</Property><Property Name="Time" Value="18:31 PM">
+</Property></Properties><Event ErrorLevel="0" Project="WebControls" Source="WebControls.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebControls" Source="WebControls.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WebControls.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WebControls.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebControls" Source="WebControls.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

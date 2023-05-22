@@ -1,0 +1,10 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Session\Session\bin\Session.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Session\Session\bin\Session.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Session\Session\Session\Session\bin\Session.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Session\Session\Session\Session\bin\Session.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Session\Session\Session\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache

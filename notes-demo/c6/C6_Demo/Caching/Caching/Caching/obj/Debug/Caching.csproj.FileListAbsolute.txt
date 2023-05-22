@@ -1,0 +1,9 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Caching\Caching\Caching\bin\Caching.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Caching\Caching\Caching\bin\Caching.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Caching\Caching\Caching\obj\Debug\Caching.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\Caching\Caching\Caching\obj\Debug\Caching.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Caching\Caching\Caching\bin\Caching.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Caching\Caching\Caching\bin\Caching.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Caching\Caching\Caching\obj\Debug\Caching.csprojResolveAssemblyReference.cache
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Caching\Caching\Caching\obj\Debug\Caching.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\Caching\Caching\Caching\obj\Debug\Caching.pdb

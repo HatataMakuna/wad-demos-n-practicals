@@ -1,0 +1,91 @@
+.guideline { font-size: 120%;
+	     border-width: 1px;  
+             border: 1px solid; 
+             color: black;
+             background: #FFFFCC; 
+             padding-top: 5px; 
+             padding-bottom: 5px; 
+             padding-right: 5px; 
+             padding-left: 5px; 
+             margin-top: 10px;
+	     width: 75%; 
+             float: left
+}
+
+DIV.navbar { text-align: center }
+.glnav { float: right }
+H4.subhead { clear: both }
+.priority1 { color: #ff0000; background: white }
+SPAN.checkpoint { font-weight: bold; margin-top: .75em }
+DT.checkpoint { font-weight: normal }
+DL.checkpoints { margin-left: 2em; margin-right: 2em }
+.checkpoint-nb {color: maroon; background: white}
+
+DT.glossary { margin-top: .5em; margin-bottom: .5em }
+DD.glossary { margin-bottom: 1em }
+.quicktest { color: black; background: #B6B0FF }
+
+
+.example, .css-example { border-style: solid; 
+           border-width: 1px ; 
+           color: #5D0091;
+           background: #F9F5DE; 
+           border-color: #5D0091;
+           width: 75%; 
+           margin-top: .25em;
+           margin-bottom: .25em;
+}
+
+.deprecated-example { border-style: solid; 
+                      border-width: 1px ; 
+                      color: #5D0091;
+                      background: #F9F5DE; 
+                      border-color: red;
+                      width: 75%; 
+                      margin-top: .25em;
+                      margin-bottom: .25em;
+}
+
+.dfn { color: #00513D; 
+       font-style: italic 
+}
+
+.dfn-instance { color: #00513D; 
+       font-style: italic 
+}
+
+.elements { color: black; background: #E7FFFE }
+.attributes { color: black; background: #FFFADF }
+
+.off { display:none }
+
+HR { margin-top: .5em}
+
+.toc {
+    text-indent: 0;
+}
+
+P.toc-line {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: 0;
+}
+
+IMG.conform { background: white; color: white; border: none }
+
+UL.toc, OL.toc {list-style: none}
+LI.tocline1 {font-weight: bold}
+LI.tocline2 {font-weight: normal}
+LI.tocline4 {font-style: italic}
+DIV.toc, UL.index, DT {
+    text-align: left
+}
+
+@media aural {
+.guideline { volume: loud ; pause-before: 20%; elevation: above }
+SPAN.checkpoint { richness: 75 }
+.example { speak-punctuation: code }
+.off { speak:none }
+.priority1 { volume: loud }
+.dfn-instance { stress: 20 }
+}

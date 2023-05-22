@@ -1,0 +1,4 @@
+c:\users\cj\documents\visual studio 2015\Projects\Chap3\Chap3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\cj\documents\visual studio 2015\Projects\Chap3\Chap3\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\cj\documents\visual studio 2015\Projects\Chap3\Chap3\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\cj\documents\visual studio 2015\Projects\Chap3\Chap3\bin\roslyn\VBCSCompiler.exe

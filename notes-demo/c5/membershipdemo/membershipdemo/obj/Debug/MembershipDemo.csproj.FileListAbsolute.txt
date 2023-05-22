@@ -1,0 +1,15 @@
+F:\IP2009\Others\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.dll
+F:\IP2009\Others\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.pdb
+F:\IP2009\Others\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\ResolveAssemblyReference.cache
+F:\IP2009\Others\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.dll
+F:\IP2009\Others\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.pdb
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.dll
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.pdb
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.dll
+D:\TARC\Teaching Materials\TM\AACS4134 IP\AACS4134_201011\Lecture Slides\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.pdb
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.dll
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipDemo\MembershipDemo\bin\MembershipDemo.pdb
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.dll
+D:\TARC\Teaching Materials\AACS4134\AACS4134_201213\lecture\Chapter 5\MembershipDemo\MembershipDemo\obj\Debug\MembershipDemo.pdb
