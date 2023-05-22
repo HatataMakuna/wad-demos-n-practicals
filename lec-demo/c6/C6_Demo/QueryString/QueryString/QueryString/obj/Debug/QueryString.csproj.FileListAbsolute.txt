@@ -1,0 +1,9 @@
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\QueryString\QueryString\QueryString\bin\QueryString.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\QueryString\QueryString\QueryString\bin\QueryString.pdb
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\QueryString\QueryString\QueryString\obj\Debug\QueryString.dll
+E:\Lecture\BAIT2113 Web Application Development - Feb2015\Lecture\Chapter 6\StateManagementDemo\QueryString\QueryString\QueryString\obj\Debug\QueryString.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\QueryString\QueryString\QueryString\bin\QueryString.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\QueryString\QueryString\QueryString\bin\QueryString.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\QueryString\QueryString\QueryString\obj\Debug\QueryString.dll
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\QueryString\QueryString\QueryString\obj\Debug\QueryString.pdb
+C:\Users\siewkee\Desktop\2113_201509\Demo\StateManagementDemo\QueryString\QueryString\QueryString\obj\Debug\QueryString.csprojResolveAssemblyReference.cache
