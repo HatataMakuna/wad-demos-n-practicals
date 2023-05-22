@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="P2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style2 {
+            width: 251px;
+        }
+        .auto-style3 {
+            height: 23px;
+            width: 251px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table style="width:100%; font-size:25px">
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td>Header<br />
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">Menu<asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            <td>Body<br />
+                <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    DO NOT PUT ANY DESIGN HERE (IF THIS IS A MASTER PAGE)</p>
+                <p>
+                    THIS CONTENTPLACEHOLDER IS USED BY CHILD PAGE ONLY
+                </p>
+                <p>
+                    (CHILD PAGE MEANS WEB FORM THAT USE THIS MASTER PAGE)</p>
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                <br />
+                <br />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3"></td>
+            <td class="auto-style1">Footer</td>
+            <td class="auto-style1"></td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
