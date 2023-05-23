@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Practical2.LabExercise.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 301px;
+        }
+        .auto-style2 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <table style="width:100%;">
+                    <tr>
+                        <td colspan="2" style="text-align:center; font-size:40px;"><strong>Student Portal Page</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="auto-style2">
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                            </asp:SiteMapPath>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource2">
+                            </asp:TreeView>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" SiteMapProvider="PE2" />
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </form>
+</body>
+</html>
