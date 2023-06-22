@@ -1,0 +1,2 @@
+C:\Users\Wesley Har\Desktop\School Properties V3\Degree matters\Year 2 sem 3\Web Application Development (Web Dev)\Practical\practical9\Prac9 (Materials)\Prac9 (Materials)\obj\Debug\Prac9 (Materials).csproj.AssemblyReference.cache
+C:\Users\Wesley Har\Desktop\School Properties V3\Degree matters\Year 2 sem 3\Web Application Development (Web Dev)\Practical\practical9\Prac9 (Materials)\Prac9 (Materials)\obj\Debug\Prac9 (Materials).csproj.CoreCompileInputs.cache

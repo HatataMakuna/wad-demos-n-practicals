@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Practical2.master.cs" Inherits="Practical2.Practical2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 26px;
+        }
+        .auto-style2 {
+            width: 35%;
+        }
+        .auto-style8 {
+            height: 33px;
+            width: 111px;
+        }
+        .auto-style9 {
+            height: 24px;
+            width: 111px;
+        }
+        .auto-style10 {
+            height: 84px;
+            width: 111px;
+        }
+        .auto-style11 {
+            height: 3px;
+            width: 111px;
+        }
+        .auto-style12 {
+            height: 34px;
+            width: 111px;
+        }
+        .auto-style13 {
+            height: 33px;
+            width: 877px;
+        }
+        .auto-style14 {
+            height: 24px;
+            width: 877px;
+        }
+        .auto-style15 {
+            height: 84px;
+            width: 877px;
+        }
+        .auto-style16 {
+            height: 3px;
+            width: 877px;
+        }
+        .auto-style17 {
+            height: 34px;
+            width: 877px;
+        }
+        .auto-style18 {
+            width: 877px;
+        }
+        .auto-style19 {
+            width: 111px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style1" style="text-align:center;">PRACTICAL 2</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                            </asp:SiteMapPath>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" StaticSubMenuIndent="10px">
+                                <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <DynamicMenuStyle BackColor="#FFFBD6" />
+                                <DynamicSelectedStyle BackColor="#FFCC66" />
+                                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <StaticSelectedStyle BackColor="#FFCC66" />
+                            </asp:Menu>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="Prac2" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </form>
+</body>
+</html>
