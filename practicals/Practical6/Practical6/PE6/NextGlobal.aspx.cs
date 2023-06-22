@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Prac6
+namespace Practical6
 {
     public partial class NextGlobal : System.Web.UI.Page
     {

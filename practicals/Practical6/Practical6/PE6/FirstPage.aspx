@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstPage.aspx.cs" Inherits="Prac6.PE6.FirstPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstPage.aspx.cs" Inherits="Practical6.PE6.FirstPage" %>
 
 <!DOCTYPE html>
 

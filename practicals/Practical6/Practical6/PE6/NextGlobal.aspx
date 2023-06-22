@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NextGlobal.aspx.cs" Inherits="Prac6.NextGlobal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NextGlobal.aspx.cs" Inherits="Practical6.NextGlobal" %>
 
 <!DOCTYPE html>
 

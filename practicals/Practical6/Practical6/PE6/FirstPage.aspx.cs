@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Prac6.PE6
+namespace Practical6.PE6
 {
     public partial class FirstPage : System.Web.UI.Page
     {
