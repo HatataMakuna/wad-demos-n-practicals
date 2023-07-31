@@ -1,2 +1,2 @@
 # wad-demos-n-practicals
-All the codes and demos for Web Design and Development (WAD)
+This repository contains all the demos (from both lecture and practicals) and actual practical works from BAIT2113 Web Application Development.
